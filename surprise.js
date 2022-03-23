@@ -1,5 +1,9 @@
 const surpriseSection = document.getElementById('surprise');
 
-function showSurprise() {
+
+
+const randomTime = Math.random() * 4000;
+
+setTimeout(function () {
     surpriseSection.textContent = '🎉 Surprise! 🎉';
-}
+}, randomTime);
